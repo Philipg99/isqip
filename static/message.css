@@ -1,13 +1,81 @@
-body{
-	background-color: blueviolet;
+body {
+	background-color: gray;
 }
 
-.main-box{
+.main-box {
 	margin-top: 30px;
 	background-color: white;
-	color: black;
+	color: rgb(36, 36, 36);
 	height: 700px;
 	width: 1000px;
 	border-radius: 15px;
-	margin-left: 8%
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 20px
+}
+
+.msg {
+	margin-left: 25px;
+	margin-top: -10px;
+}
+
+/* Chat containers */
+
+.container {
+	border: 2px solid #dedede;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 4px;
+	/* margin-left: 8%; */
+	/* margin-right: 8%; */
+	/* width: 50%; */
+}
+
+/* Darker chat container */
+
+.darker {
+	border-color: #ccc;
+	background-color: #ddd;
+	text-align: right
+}
+
+/* Clear floats */
+
+.container::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Style images */
+
+/* .container img {
+	float: left;
+	max-width: 60px;
+	width: 100%;
+	margin-right: 20px;
+	border-radius: 50%;
+} */
+
+/* Style the right image */
+
+/* .container img.right {
+	float: right;
+	margin-left: 20px;
+	margin-right: 0;
+} */
+
+/* Style time text */
+
+.time-right {
+	float: right;
+	color: #aaa;
+}
+
+/* Style time text */
+
+.time-left {
+	float: left;
+	color: #999;
 }
