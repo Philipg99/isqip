@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'message.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+	<script type="text/javascript" src="{% static 'message.js' %}"></script>
+	<meta charset="utf-8">
+	<title>Chose location</title>
+</head>
+
+<body>
+	<div class="main-box">
+		<form style="text-align: center;" action="/direct/" method="POST">
+				<label>Location: </label> <input type="text" name="loc" />
+   	 			<input type="submit" value="submit" />
+   				 {% csrf_token %}
+		</form>
+
+
+	</div>
+</div>
+</body>
+
+</html>
